@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Define your beans here -->
+
+   <bean id="MyTodo" class="comm.example.bean3.ToDo">
+   <constructor-arg name="task" ref="MyTask"/>
+   <constructor-arg name="todoId" value="1234"/>
+  
+    <constructor-arg name="isCompleted" value="false"/>
+ 
+   </bean>
+
+   <bean name="MyTask" class="comm.example.bean3.Task">
+   <constructor-arg name="taskId" value="1234"/>
+   <constructor-arg name="author" value="jhon"/>
+   <constructor-arg name="taskName" value="Spring"/>
+    
+ <property name="taskId" value="1234"/>
+ <property name="author" value="jhon"/>
+ <property name="taskName" value="Spring"/>
+
+
+   </bean>
+</beans>

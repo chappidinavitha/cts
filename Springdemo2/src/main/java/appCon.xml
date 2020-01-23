@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Define your beans here -->
+
+   <bean id="address" class="comm.example.bean2.Address">
+   <constructor-arg name="address1" value="AP"/>
+   <constructor-arg name="address2" value="kadapa"/>
+   <constructor-arg name="phoneNumber" value="123456789"/>
+   <constructor-arg name="zipCode" value="516474"/>
+   <property name="address1" value="Kolkata"/>
+ <property name="address2" value="India"/>
+ <property name="phoneNumber" value="12345"/>
+ <property name="zipCode" value="54321"/>
+   </bean>
+
+   <bean id="employee" class="comm.example.bean2.Employee" scope="prototype">
+
+<property name="address" ref="address"/>
+<property name="employeeid" value="1789"/>
+<property name="firstName" value="John"/>
+<property name="lastName" value="Doe"></property>
+</bean>
+</beans>
