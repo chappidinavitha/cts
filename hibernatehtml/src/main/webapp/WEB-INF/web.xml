@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+ <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>CustomerController</servlet-name>
+  	<display-name>CustomerController</display-name>
+  	<description></description>
+  	<servlet-class>com.example.view.CustomerController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Customerview</servlet-name>
+  	<display-name>Customerview</display-name>
+  	<description></description>
+  	<servlet-class>com.example.view.Customerview</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CustomerController1</servlet-name>
+  	<display-name>CustomerController1</display-name>
+  	<description></description>
+  	<servlet-class>com.example.view.CustomerController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CustomerMapper</servlet-name>
+  	<display-name>CustomerMapper</display-name>
+  	<description></description>
+  	<servlet-class>com.example.view.CustomerMapper</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerController</servlet-name>
+  	<url-pattern>/controller.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Customerview</servlet-name>
+  	<url-pattern>/success.view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CustomerController1</servlet-name>
+  	<url-pattern>/Controller.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CustomerMapper</servlet-name>
+  	<url-pattern>/CustomerMapper</url-pattern>
+  </servlet-mapping>
+</web-app>
