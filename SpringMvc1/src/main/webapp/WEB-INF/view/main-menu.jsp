@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Spring MVC</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h3>welcome to spring mvc</h3>
+<h3>spring mvc homepage</h3>
+<a href="${pageContext.request.contextPath}/student/showForm">Show Form</a>
 </body>
 </html>
