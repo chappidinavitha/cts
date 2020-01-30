@@ -21,6 +21,7 @@ public class Customer {
 	@Column(name = "last_name")
 	private String lastName;
 	private String email;
+
 	public Customer(String firstName, String lastName, String email) {
 		super();
 		this.firstName = firstName;

@@ -28,6 +28,14 @@
   	<description></description>
   	<servlet-class>crm.controller.UpdateController</servlet-class>
   </servlet>
+  
+  	
+  <servlet>
+  	<servlet-name>CustomerDeleteController</servlet-name>
+  	<display-name>CustomerDeleteController</display-name>
+  	<description></description>
+  	<servlet-class>crm.controller.CustomerDeleteController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>CustomerController</servlet-name>
   	<url-pattern>/controller.do</url-pattern>
@@ -44,4 +52,11 @@
   	<servlet-name>UpdateController</servlet-name>
   	<url-pattern>/updatecustomer.do</url-pattern>
   </servlet-mapping>
+ 
+  <servlet-mapping>
+  	<servlet-name>CustomerDeleteController</servlet-name>
+  	<url-pattern>/deleteCustomer.do</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

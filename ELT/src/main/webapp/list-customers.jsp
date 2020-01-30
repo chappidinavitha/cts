@@ -39,18 +39,32 @@
 
 			<table>
 				<tr>
+				    <th>id</th>
 					<th>First Name</th>
 					<th>Last Name</th>
 					<th>Email</th>
+					<th>Action</th>
+					<th>Action1</th>
+					
 				</tr>
 
 				<!-- loop over and print our customers -->
 				<c:forEach var="tempCustomer" items="${customers}">
-
+					<c:url var="updateUrl" value="updateCustomer.do">
+					
+					<c:param name="customerId" value="${tempCustomer.id}"/>
+					</c:url>
+					<c:url var="deleteUrl" value="deleteCustomer.do">
+					
+					<c:param name="customerId" value="${tempCustomer.id}"/>
+					</c:url>			
 					<tr>
+					     <td> ${tempCustomer.id} </td>
 						<td> ${tempCustomer.firstName} </td>
 						<td> ${tempCustomer.lastName} </td>
 						<td> ${tempCustomer.email} </td>
+						<td><a href="${ updateUrl}">Update</a>
+						<td><a href="${ deleteUrl}">delete</a>
 					</tr>
 
 				</c:forEach>
