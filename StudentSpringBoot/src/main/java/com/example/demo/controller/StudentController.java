@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -15,11 +15,15 @@ public class StudentController {
 		return "show-form";
 	}
 	@RequestMapping("/processForm")
-	public String processForm(HttpServletRequest request,Model model)
-	{
+	public String processForm(HttpServletRequest request,Model model) {
 		String sName=request.getParameter("sName");
+		String lName=request.getParameter("lName");
+		String email=request.getParameter("email");
 		model.addAttribute("message",sName);
+		model.addAttribute("message",lName);
+		model.addAttribute("message",email);
 		return "process-form";
+		
 	}
 
 }

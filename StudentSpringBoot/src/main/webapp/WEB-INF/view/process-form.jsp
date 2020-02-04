@@ -9,5 +9,7 @@
 </head>
 <body>
 Student Name:${message}
+Student lastName:${message}
+Student email:${message}
 </body>
 </html>

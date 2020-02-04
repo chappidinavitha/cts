@@ -1,13 +1,15 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@Controller
+@Controller 
 public class HomeController {
-	@RequestMapping( method = RequestMethod.GET,path = "/" )
-			public String showPage() {
-		return "main-menu";
-	}
+	
+@RequestMapping( method=RequestMethod.GET,path = "/")
+public String showPage()
+{
+	return "main-menu";
+}
 }
