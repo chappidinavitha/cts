@@ -8,5 +8,6 @@ import com.example.demo.model.ToDo;
 public interface ToDoService {
 	public List<ToDo> getAllToDos();
 	public Optional<ToDo> getTodoById(Integer todoId);
+	public ToDo createtoDo(ToDo todo);
 
 }

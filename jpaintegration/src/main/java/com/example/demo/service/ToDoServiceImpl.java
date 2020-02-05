@@ -36,4 +36,10 @@ public class ToDoServiceImpl implements ToDoService{
 		return todo;
 	}
 
+	@Override
+	public ToDo createtoDo(ToDo todo) {
+		
+		return todoDao.save(todo);
+	}
+
 }
