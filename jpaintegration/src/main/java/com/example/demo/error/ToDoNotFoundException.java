@@ -1,6 +1,6 @@
 package com.example.demo.error;
 @SuppressWarnings("serial")
-public class ToDoNotFoundException extends RuntimeException{
+public class ToDoNotFoundException extends RuntimeException {
 	private String message;
 
 	public ToDoNotFoundException(String message) {

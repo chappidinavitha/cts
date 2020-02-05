@@ -9,5 +9,10 @@ public interface ToDoService {
 	public List<ToDo> getAllToDos();
 	public Optional<ToDo> getTodoById(Integer todoId);
 	public ToDo createtoDo(ToDo todo);
+	public void deletetoDoById(Integer todoId);
+	public void deleteAll();
+	 public List<ToDo> findBytodoName(String todoName);
+	 
+	
 
 }

@@ -42,4 +42,24 @@ public class ToDoServiceImpl implements ToDoService{
 		return todoDao.save(todo);
 	}
 
+	@Override
+	public void deletetoDoById(Integer todoId) {
+		todoDao.deleteById(todoId);
+		
+	}
+
+	@Override
+	public void deleteAll() {
+		todoDao.deleteAll();
+		
+	}
+    
+	@Override
+	public List<ToDo> findBytodoName(String todoName) {
+		
+		return todoDao.findBytodoName(todoName);
+	}
+
+	
+
 }
