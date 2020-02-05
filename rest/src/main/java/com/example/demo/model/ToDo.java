@@ -17,7 +17,8 @@ public void setTodoId(String todoId) {
 public String getTodoName() {
 	return todoName;
 }
-public void setTodoName(String todoName) {
+public void setTodoNam00
+\ e(String todoName) {
 	this.todoName = todoName;
 }
 
