@@ -12,11 +12,5 @@ public class Item {
 private String itemId;
 private String itemName;
 private String itemPrice;
-public Item(String itemId, String itemName, String itemPrice) {
-	super();
-	this.itemId = itemId;
-	this.itemName = itemName;
-	this.itemPrice = itemPrice;
-}
 
 }
