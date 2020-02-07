@@ -12,5 +12,7 @@ public class Item {
 private String itemId;
 private String itemName;
 private String itemPrice;
+private Product product;
+
 
 }

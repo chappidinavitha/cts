@@ -1,7 +1,20 @@
 package com.example.demo.model;
 
-public class Product {
-	private Category productCategory;
-	private Brand productBrand;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
+@ToString
+
+public class Product {
+ private String category;
+ private String brand;
 }
