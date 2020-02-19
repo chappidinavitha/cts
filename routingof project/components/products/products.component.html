@@ -1,0 +1,26 @@
+<h2>Sub Category</h2>
+<div class="container">
+    <div class="row">
+    <div class="col-lg-3">
+        {{catId}}
+        <h3>sub categories</h3>
+        <ul class="list-group" style="cursor:pointer;" *ngFor="let subcat of subcategory">
+          <li style="cursor:pointer;" (click)="onSelectSubCategory(subcat.subId)"class="list-group-item">{{subcat.subName}}</li>
+          
+        </ul>
+    </div>
+    </div>
+   
+    <div class="col-lg-9">
+        <div class="row">
+        <div class="card"  *ngFor="let prod of product" style="width:16rem">
+           
+            <img src="{{_image_url+prod.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-text">{{prod.productName}}</h3>
+        <h2>{{prod.mrp*50 | currency:'INR'}}</h2>
+        <button (click)="addtoCart(prod)" class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
